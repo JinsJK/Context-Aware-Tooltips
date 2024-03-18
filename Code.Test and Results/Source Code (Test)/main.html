@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Systems Project</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            padding: 40px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+        .centered-text {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1, h2, strong {
+            color: #2C3E50;
+        }
+        .section {
+            background-color: #ECF0F1;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 5px solid #3498DB;
+            text-align: left;
+        }
+        p, li {
+            font-size: 16px;
+            color: #34495E;
+            line-height: 1.6;
+        }
+        ul {
+            list-style-type: none; /* Removes default bullets */
+            padding: 0;
+        }
+        ul li::before {
+            content: "•"; /* Custom bullet */
+            color: #3498DB; /* Bullet color */
+            font-weight: bold; /* Optional: makes the bullet bold */
+            display: inline-block; 
+            width: 1em; /* Space before bullet */
+            margin-left: -1em; /* Align with text outside */
+        }
+        a {
+            color: #2980B9;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        button {
+            background-color: #3498DB;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            display: block;
+            margin: 20px auto;
+        }
+        button:hover, button:focus {
+            background-color: #2980B9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="centered-text">
+            <h1>Interactive Systems Project</h1>
+            <h2>Test Guidelines</h2>
+        </div>
+        
+        <div class="section">
+            <strong>Test Description:</strong> 
+            Welcome to our Interactive Reading Experience Test! You are about to participate in a study that explores the effectiveness of context-aware tooltips in enhancing comprehension of literary texts. Throughout this test, you will encounter two tasks designed to assess how tooltip annotations aid your understanding of a complex passage.<br><br>In the first task, you will read a passage with traditional annotations. In the second, you will interact with a dynamic version of the same passage—simply hover over underlined words to reveal the author's intended meanings. Your feedback will be invaluable in improving the reading experience for future users.<br><br>Remember, there are no right or wrong answers here; we are interested in your personal experience and thoughts. After completing both tasks, you will be asked to fill out a short survey. Your responses will contribute significantly to our research on improving digital reading platforms.<br><br>Thank you for participating, and happy reading!</div>
+		
+		<div class="section">
+            <strong>Test Instructions:</strong>
+            <ul>
+                <li>Task 1 : Please read the paragraph from the play by William Shakespeare. The annotations will be provided to the right of the passage. Once you're done with the task proceed to the task 2.</li>
+                <li>Task 2 : Please read the same passage again but this time the annotations of specific words is revealed when you hover over them</li>
+				<li>Once you're done with both the tasks, click the "Fill Survey" button to complete a quick and short survey to answer some questions regarding the test.</li>
+
+            </ul>
+        </div>
+        
+        <div class="section">
+            <strong>Post Hoc Test Guidelines (NASA-TLX):</strong> After completing the tasks, you will be asked to fill out the NASA Task Load Index (NASA-TLX) questionnaire. This will help evaluate the perceived workload during the test.
+        </div>
+
+        <!-- Button at the bottom of the page -->
+<button type="button" onclick="window.location.href='task1.html';">Start Task</button>
+    </div>
+</body>
+</html>

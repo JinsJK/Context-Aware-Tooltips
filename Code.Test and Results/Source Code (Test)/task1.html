@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+
+body {
+  font-family: 'Times New Roman', serif;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+  text-align: justify;
+  background-color: #f5f5f5; 
+}
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+  margin: 0;
+}
+
+.highlighted {
+  background-color: #34495E;; /* Grey background for the text */
+  padding: 10px 10px 10px 10px; /* Padding around the text */
+  margin: 10px auto 0 auto; /* Margin at the top of the block */
+  max-width: 800px; /* Maximum width of the text block */
+  color: white;
+}
+
+h2, .subtitle, .character, .dialogue {
+  background-color: #34495E; /* Grey background for the text */
+  color: white; /* Assuming a white text color for better contrast */
+  padding: 0 20px; /* Padding on the sides */
+  margin: 0 auto; /* Center the block */
+  max-width: 800px; /* Maximum width of the text block */
+}
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.subtitle, .character {
+  text-align: center;
+  font-style: italic;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.character {
+  font-style: normal;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.tooltip {
+  text-decoration: underline;
+  cursor: help;
+  color: inherit;
+  font-weight: normal;
+}
+
+.tooltip:hover {
+  font-weight: normal;
+  color: black;
+}
+
+h3 {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.dialogue {
+  text-align: justify;
+  text-indent: 2em;
+}
+
+.image-container {
+  display: flex; /* Use Flexbox */
+  justify-content: center; /* Center the images horizontally */
+  gap: 20px; /* Optional: adds some space between the images */
+  margin-top: 20px; /* Adds some space above the container */
+}
+
+.image-container img {
+  width: 50%; /* Adjusts the width of each image to fit side by side */
+  max-width: 400px; /* You can adjust this value to fit your design needs */
+  height: auto; /* Keeps the aspect ratio of the images */
+}
+
+        button {
+            background-color: #3498DB;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            display: block;
+            margin: 20px auto;
+        }
+        button:hover, button:focus {
+            background-color: #2980B9;
+        }
+</style>
+</head>
+<body>
+
+<div class="highlighted">
+  <h3>TASK 1</h3>
+  <h3>Please read the paragraph carefully and attempt to grasp its meaning. For clarification, refer to the annotations provided by the author.</h3>
+  </div>
+    <div class="image-container">
+    <!-- Image 1 -->
+    <img src="image1.jpeg" alt="Description of first image">
+    <!-- Image 2 -->
+    <img src="image2.jpeg" alt="Description of second image">
+	
+
+  </div>
+     <button type="button" onclick="window.location.href='task2.html';">Next Task</button>
+
+
+</body>
+</html>
